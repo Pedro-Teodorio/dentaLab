@@ -1,3 +1,5 @@
+@import url(header.css);
+
 * {
   margin: 0;
   padding: 0;
@@ -5,7 +7,7 @@
 }
 .banner-dental {
   width: 100%;
-  height: 70vh;
+  height: 60vh;
 
   background: rgb(212, 228, 253);
   background: linear-gradient(
@@ -20,7 +22,7 @@
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  height: 70vh;
+  height: 60vh;
 }
 .banner-content {
   flex: 1 0 35%;
@@ -59,4 +61,14 @@
 .banner-dental img {
   height: 85%;
   object-fit: cover;
+}
+
+.atendimento,
+.profissionais,
+.nota{ 
+  width: 300px;
+  height: 200px;
+  background-color: #0d6efd;
+  margin-left: 350px;
+  border-radius: 15px;
 }

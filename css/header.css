@@ -1,0 +1,296 @@
+* {
+    /* Zera as confugurações padrões de CSS */
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  #menu_nav {
+    background: rgb(212, 228, 253);
+    background: linear-gradient(
+        90deg,
+        rgba(212, 228, 253, 1) 39%,
+        rgba(212, 244, 233, 1) 79%
+    );
+    display: grid;
+    grid-template-areas: "menu_content_logo menu_full_list";
+  }
+  
+  .menu_content_logo {
+    display: flex;
+    align-items: center;
+    grid-area: "menu_content_logo";
+  }
+  
+  .menu_logo {
+    width: 5rem;
+    height: 5rem;
+    padding: 10px;
+    margin-left: 100px;
+  }
+  
+  #menu_title {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+  }
+  
+  #menu_title span {
+    color: #8622d2;
+  }
+  
+  .menu_full_list {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    grid-area: "menu_full_list";
+    margin: 10px;
+    margin-right: 100px;
+  }
+  
+  .menu_itens {
+    display: inline-block;
+    padding: 0.75rem;
+    list-style-type: none;
+  }
+  
+  .menu_itens a {
+    color: #8622d2;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  
+  .menu_list {
+    margin: 10px;
+    font-size: 20px;
+  }
+  
+  .menu_botoes button {
+    text-decoration: none;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    margin: 10px;
+    font-size: 15px;
+  }
+  
+  .menu_botoes a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  #btn_login {
+    background-color: #2aa6d6;
+  }
+  
+  #btn_cadastro {
+    background-color: #b9631a;
+  }
+  
+  .container_photo {
+    background-image: url("../Imagens/salao.webp");
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  
+  .card_photo {
+    margin-left: 3rem;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    width: 50%;
+  }
+  
+  .card_photo h2 {
+    color: #fff;
+    max-width: 800px;
+    padding: 5px;
+    font-weight: 100;
+    font-size: 50px;
+  }
+  
+  .card_photo p {
+    color: #b9631a;
+    padding: 5px;
+    font-weight: 500;
+    font-size: 25px;
+  }
+  .sevices {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3ccad;
+    flex-direction: column;
+  }
+  .title_services {
+    text-align: center;
+    padding: 32px;
+  }
+  .container_cards {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .card_services {
+    padding: 16px 40px;
+    margin: 16px;
+    background-color: #d3ba9b;
+    border-radius: 8px;
+  }
+  .about_me,
+  .our_professionals {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3ccad;
+    padding: 64px 0;
+  }
+  
+  .container_about_me,
+  .container_our_professionals {
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    gap: 32px;
+    margin-top: 64px;
+  }
+  .container_about_me img,
+  .container_our_professionals img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    flex: 1 0 25%; /* flex-grow, flex-shrink, flex-basis */
+  }
+  .container_about_me .content_about_me,
+  .container_our_professionals .content_our_professionals {
+    flex: 2 0 45%;
+  }
+  .content_about_me h2,
+  .content_our_professionals h2 {
+    font-size: 32px;
+    font-weight: 600;
+  }
+  .content_about_me p,
+  .content_our_professionals p {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-top: 32px;
+  }
+  
+  .galery {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e3ccad;
+    flex-direction: column;
+    
+  } 
+  .galery h2 {
+    width: 100%;
+    font-size: 32px;
+    font-weight: 600;
+    margin-top: 64px;
+    background-color: #d3ba9b;
+    text-align: center;
+    line-height: 72px;
+  }
+  .carrousel-container {
+    max-width: 1400px;
+    width: 100%;
+    padding: 40px 0;
+  }
+  .carrousel-content {
+    margin: 0 48px;
+    overflow: hidden;
+  }
+  .card {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    gap: 16px;
+  }
+  .card-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .card-image {
+    position: relative;
+    height: 206px;
+    border-radius: 20px;
+  }
+  .card-image .image {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background-color: gray;
+    object-fit: cover;
+  }
+  .card-price {
+    display: flex;
+    align-items: flex-start;
+    gap: 4;
+  }
+  .nav-btn {
+    color: #ab7046;
+  }
+  .swiper-pagination-bullet {
+    background-color: #ab7046;
+  }
+  .swiper-button-next {
+    right: 0;
+  }
+  .swiper-button-prev {
+    left: 0;
+  }
+  @media screen and (max-width: 768px) {
+    .nav-btn {
+      display: none;
+    }
+    .carrousel-content {
+      margin: 0 24px;
+    }
+  }
+  footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #000000;
+    padding: 32px;
+    
+  }
+  .menu_footer {
+    list-style: none;
+    color: #e2cbab;
+    padding: 20px;
+  }
+  .menu_footer li {
+      display: flex;
+    color: #e2cbab;
+     padding: 8px 0;
+  }
+  .content_img_footer {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  .content_img_footer img {
+    width: 64px;
+    height: 64px;
+    object-fit: cover;
+  }
+  .content_img_footer p {
+    font-size: 20px;
+  }
+  .content_img_footer span {
+    color: #b9631a;
+    text-decoration: none;
+  }
+  
