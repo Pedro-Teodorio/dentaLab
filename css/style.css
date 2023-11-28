@@ -62,13 +62,63 @@
   height: 85%;
   object-fit: cover;
 }
-
-.atendimento,
-.profissionais,
-.nota{
-  width: 300px;
-  height: 200px;
-  background-color: #0d6efd;
-  margin-left: 350px;
+.cards{
+  display: flex;
+  margin-top: -200px;
+  padding: 100px;
+  justify-content: space-between;
+}
+.card-1{
+  background-color: #FFF;
   border-radius: 15px;
+  width: 20%;
+  height: 200px;
+  align-content: center;
+  box-shadow: 0px 0px 10px #000;
+}
+.card-1:nth-child(1){
+  border-top: 4px solid #0d6efd;
+}
+.card-1:nth-child(2){
+  border-top: 4px solid #0d6efd;
+}
+.card-1:nth-child(3){
+  border-top: 4px solid #0d6efd;
+}
+.img{
+  max-width: 100%;
+  height: auto;
+  align-content: center;
+}
+.reason-for-choice{
+  display: flex;
+  margin-top: 200px;
+}
+.velocity{
+  color: aqua;
+  font-style: bold;
+}
+.simplicity{
+  color: blue;
+  font-style: bold;
+}
+.quality{
+  color: rgb(57, 178, 214);
+  font-style: bold;
+}
+.services{
+  margin-top: 200px;
+}
+.cards2{
+  display: flex;
+  padding: 100px;
+  justify-content: space-between;
+}
+.card-2{
+  background-color: #FFF;
+  border-radius: 15px;
+  width: 20%;
+  height: 200px;
+  align-content: center;
+  box-shadow: 0px 0px 10px #000;
 }
