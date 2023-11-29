@@ -152,4 +152,30 @@
   max-width: 20%;
   height: auto;
   align-content: center;
-} 
+}
+.our-workers{
+  background-color: rgb(202, 218, 244);
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.our-workers-text{
+  text-align: justify;
+  max-width: 50%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.workers{
+  padding: 20px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.our-workers-img img{
+  max-width: 75%;
+  height: auto;
+  align-content: right;
+}
