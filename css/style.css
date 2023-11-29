@@ -69,12 +69,16 @@
   justify-content: space-between;
 }
 .card-1{
+  display: flex;
+  flex-direction: column;
   background-color: #FFF;
   border-radius: 15px;
   width: 20%;
   height: 200px;
-  align-content: center;
+  align-items: center;
+  justify-content: center;
   box-shadow: 0px 0px 10px #000;
+  text-align: center;
 }
 .card-1:nth-child(1){
   border-top: 4px solid #0d6efd;
@@ -85,14 +89,31 @@
 .card-1:nth-child(3){
   border-top: 4px solid #0d6efd;
 }
-.img{
-  max-width: 100%;
+.cards img{
+  max-width: 20%;
   height: auto;
   align-content: center;
 }
 .reason-for-choice{
   display: flex;
-  margin-top: 200px;
+  justify-content: space-between;
+}
+.img-reason-for-choice{
+  display: flex;
+  margin-top: 115px;
+  max-width: 35%;
+  height: auto;
+}
+.text-reason-for-choice{
+  text-align: justify;
+  justify-content: center;
+  margin-top: 300px;
+  margin-right: 200px;
+  max-width: 30%;
+  justify-content: space-between;
+}
+.reason{
+  padding: 20px;
 }
 .velocity{
   color: aqua;
@@ -107,7 +128,7 @@
   font-style: bold;
 }
 .services{
-  margin-top: 200px;
+  text-align: center;
 }
 .cards2{
   display: flex;
@@ -115,10 +136,46 @@
   justify-content: space-between;
 }
 .card-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   background-color: #FFF;
   border-radius: 15px;
   width: 20%;
   height: 200px;
   align-content: center;
   box-shadow: 0px 0px 10px #000;
+}
+.cards2 img{
+  max-width: 20%;
+  height: auto;
+  align-content: center;
+}
+.our-workers{
+  background-color: rgb(202, 218, 244);
+  margin: 15px;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+.our-workers-text{
+  text-align: justify;
+  max-width: 50%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.workers{
+  padding: 20px;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.our-workers-img img{
+  max-width: 75%;
+  height: auto;
+  align-content: right;
 }
